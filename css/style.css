@@ -114,3 +114,29 @@ h2 { background: #CCCCCC; font: 15px arial; color: #FFFFFF; padding: 5px; font-w
 .isHover:hover{
     color: red;
 }
+ul.leftmenu{
+    text-decoration: none;
+    list-style: none;
+    font-size: 12pt ;
+}
+ul.leftmenu li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 12pt ;
+ 
+    line-height: 2em;
+}
+span.leftmenu{
+        padding-right: 10px;
+    color: green ;
+}
+span.leftmenu:hover{
+    color: red;
+}
+.container
+{
+    border: 1px solid black;
+}
+.col-sm-3{
+    border: 1px solid red;
+}

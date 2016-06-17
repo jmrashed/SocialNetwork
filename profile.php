@@ -1,24 +1,24 @@
 <?php
 session_start();
 /*
-echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
+  echo '<pre>';
+  print_r($_SESSION);
+  echo '</pre>';
  * 
  */
 
 
 
-  if(! isset( $_SESSION['logid'] ) ) {
-      header('Location:login.php');
-  }
-  if( isset( $_SESSION['logid'] ) ) {
-      $_SESSION['logid']=$_SESSION['logid'];
-      $_SESSION['id']=$_SESSION['id'];
-  }
-  
-  
-  
+if (!isset($_SESSION['logid'])) {
+    header('Location:login.php');
+}
+if (isset($_SESSION['logid'])) {
+    $_SESSION['logid'] = $_SESSION['logid'];
+    $_SESSION['id'] = $_SESSION['id'];
+}
+
+
+
 include("profilesql.php");
 include("friends.php");
 include("header.php");
@@ -82,13 +82,13 @@ while ($row = mysql_fetch_array($acrec4)) {
 <div class="container bodyStart">
     <div class="row">
         <?php include("head.php"); ?>
-        <?php include("menu.php"); ?>
+        <?php // include("menu.php"); ?>
     </div>
     <div class="row">
-        <div class="col-md-3 col-sm-3">
+        <div class="col-md-2 col-sm-2">
             <?php include("profileleft.php"); ?>
         </div>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-7 col-sm-7">
             Welcome, <?php echo $_SESSION["logid"]; ?><br>
             Number of visitors:
             <?php
@@ -164,17 +164,20 @@ while ($row = mysql_fetch_array($acrec4)) {
 
         </div>
         <div class="col-md-3 col-sm-3">
-            <?php
-            for ($i = 1; $i < 10; $i++) {
-                ?>
-                <div class="col-sm-12">
-                    <a href=""><img src="images/1.png" style="width:10px; height:10px "> Muhib Ull <?= $i ?> </a>
-                </div>
-
+            <ul class="leftmenu">
                 <?php
-            }
-            ?> 
+                for ($i = 1; $i < 10; $i++) {
+                    ?>
+                    <div class="col-sm-12">
+                        <li class="leftmenu">
+                            <a href="" class="leftmenu"><img src="images/1.png" style="width:10px; height:10px "> Muhib Ull <?= $i ?> </a>
+                        </li>
+                    </div>
 
+                    <?php
+                }
+                ?> 
+            </ul>
         </div>
     </div>
 </div>
