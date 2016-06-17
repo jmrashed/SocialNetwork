@@ -30,8 +30,16 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <?php  if(isset( $_SESSION['logid'] ) ) { ?>
+                    <form class="navbar-form navbar-right" role=" " action="login.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="example@email.com" name="search">
+                        </div> 
+                        <input  type="submit" class="btn btn-success" name="logiin" value="খুজুন " >
+                    </form>
+                    
                     <ul class="nav navbar-nav navbar-left">
-                        <li>
+                        <li> 
                             <a href="profile.php"> 
                                 <span class="glyphicon glyphicon-user isHover" data-toggle="tooltip"  data-placement="bottom"  title="My Profile" > 
                                 </span>
@@ -67,7 +75,7 @@
 
 
                     </ul>
-                    <?php  if(! isset( $_SESSION['logid'] ) ) { ?>
+                    <?php } if(! isset( $_SESSION['logid'] ) ) { ?>
                     <form class="navbar-form navbar-right" role=" " action="login.php" method="post">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="example@email.com" name="username">

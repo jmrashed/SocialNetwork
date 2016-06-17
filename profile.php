@@ -85,10 +85,10 @@ while ($row = mysql_fetch_array($acrec4)) {
         <?php // include("menu.php"); ?>
     </div>
     <div class="row">
-        <div class="col-md-2 col-sm-2">
+        <div class="col-md-2 col-sm-2 pull-left">
             <?php include("profileleft.php"); ?>
         </div>
-        <div class="col-md-7 col-sm-7">
+        <div class="col-md-8 col-sm-8 divBorder">
             Welcome, <?php echo $_SESSION["logid"]; ?><br>
             Number of visitors:
             <?php
@@ -163,20 +163,26 @@ while ($row = mysql_fetch_array($acrec4)) {
             </table>
 
         </div>
-        <div class="col-md-3 col-sm-3">
-            <ul class="leftmenu">
+        <div class="col-md-2 col-sm-2 pull-right">
+            <h4 class="panel">My Friends</h4>
+            <ul class="leftmenu pull-left">
                 <?php
                 for ($i = 1; $i < 10; $i++) {
                     ?>
                     <div class="col-sm-12">
                         <li class="leftmenu">
+                            <?php
+                            if ($i % 2 == 0) {
+                                echo '<img src="images/active.png" style="width:15px; height:15px" >';
+                            }
+                            ?>
                             <a href="" class="leftmenu"><img src="images/1.png" style="width:10px; height:10px "> Muhib Ull <?= $i ?> </a>
                         </li>
                     </div>
 
-                    <?php
-                }
-                ?> 
+    <?php
+}
+?> 
             </ul>
         </div>
     </div>
