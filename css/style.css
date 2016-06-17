@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+	
+.omb_login .omb_socialButtons a {
+	color: white;  
+	opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}			
+
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+	
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}		
+}
+
+
+
+.backgroundImage {
+
+
+} 
+
+
+
+html,head,title,body, table, tr, td, p, ul, li, a, h1, h2, h3, h4, h5, h6 {
+    font-family: SolaimanLipi;
+} 
+a{
+    color: green;
+}
+.green{
+    color: green;    
+}
+
+.red {
+    color: red; 
+}
+td, body { font: 12px arial; }
+.container { width: 800px; background-color:#FFF; }
+.head { background: url(images/header.png); height: 136px;}
+.foot { background: #EEEEEE; font: 11px arial; color: #FFFFFF; padding: 5px; background: url(images/footer.gif) }
+.foot a { color: #FFFFFF; text-decoration: none; }
+.nav { text-align: left; background: #EEEEEE; line-height: 35px; background: url(images/nav.gif) }
+.nav_text { font-size: 13px; color: #000000; padding: 4px; padding-right: 25px; text-decoration: none; }
+h1 { font: 25px arial; }
+h2 { background: #CCCCCC; font: 15px arial; color: #FFFFFF; padding: 5px; font-weight: bold; background: url(images/nav.gif)}
+.button { background: url(images/bt.png); border: 0px solid #000000; color: #FFFFFF; font: 12px arial; padding: 4px; }
+
+.bodyStart{
+    margin-top: 50px;
+    min-height: 80%;
+}
+.customFooter{
+    background-color: #eee;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.isHover{ 
+    padding-right: 10px;
+    color: green ;
+    font-size: 16pt;
+}
+.isHover:hover{
+    color: red;
+}
