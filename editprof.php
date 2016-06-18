@@ -112,47 +112,48 @@ else if(document.edit.state.value=="")
 <!-- head --><!-- navigation menu -->
 <?php include("head.php"); ?> 
 
-<div style="padding: 10px; text-align: left;">
+<div class="container">
 <!-- body  content -->
 
-    <table width="100%" height="462" border="0" >
+    <table  class="table table-border table-responsive" >
   <tr>
-    <td width="17%" rowspan="7" align="left" valign="top" bgcolor="#CCCCCC"><?php include("profileleft.php"); ?></td>
+    <td   align="left" valign="top" bgcolor="#CCCCCC"><?php include("profileleft.php"); ?></td>
     <td colspan="3" valign="top">
+	
   <form id="edit" name="edit" method="post" action="editprof.php" onSubmit="return edt()">
   <table width="68%" border="1" align="center">
     <tr>
-      <th colspan="2" scope="row">Update Profile</th>
+      <th  >Update Profile</th>
       </tr>
     <tr>
-      <th colspan="2" scope="row" align="center"> <?php echo $updrec; ?></th>
+      <th   align="center"> <?php echo $updrec; ?></th>
       </tr>
     <tr>
-      <th scope="row">First Name</th>
+      <th >First Name</th>
       <td><input name="fname" type="text" id="fname" size="40" value="<?php echo $fname ;?>"/></td>
       </tr>
     <tr>
-      <th scope="row">Last Name</th>
+      <th >Last Name</th>
       <td><input name="lname" type="text" id="lname" size="40" value="<?php echo $lname ;?>"/></td>
       </tr>
     <tr>
-      <th scope="row">Gender</th>
+      <th >Gender</th>
       <td><?php echo $gend ;?></td>
       </tr>
     <tr>
-      <th scope="row">City</th>
+      <th >City</th>
       <td><input name="city" type="text" id="city" size="40" value="<?php echo $city;?>" /></td>
       </tr>
     <tr>
-      <th scope="row">State</th>
+      <th >State</th>
       <td><input name="state" type="text" id="state" size="40" value="<?php echo $state;?>" /></td>
       </tr>
     <tr>
-      <th scope="row">Pincode</th>
+      <th >Pincode</th>
       <td><input name="pincode" type="text" id="pincode" size="40" value="<?php echo $pincode;?>"/></td>
       </tr>
     <tr>
-      <th scope="row">Country</th>
+      <th >Country</th>
       <td><select id="loc" name="loc">
         <option value="select country">select country</option>
         <option value="AQ"> Antarctica </option>
@@ -224,11 +225,11 @@ else if(document.edit.state.value=="")
         </select></td>
       </tr>
     <tr>
-      <th scope="row">High School</th>
+      <th >High School</th>
       <td><input name="hschool" type="text" id="hschool" size="40" value="<?php echo $hschool;?>"/></td>
     </tr>
     <tr>
-      <th scope="row">College</th>
+      <th >College</th>
       <td><select name="coll" id="coll">
         <option value="select college">select college</option>
         <?php
@@ -241,11 +242,11 @@ echo "record".		mysql_num_rows($conrec);
         </select></td>
       </tr>
     <tr>
-      <th scope="row">Course</th>
+      <th >Course</th>
       <td><input name="hschool2" type="text" id="hschool2" size="40" value="<?php echo $course;?>"/></td>
       </tr>
     <tr>
-      <th colspan="2" scope="row">
+      <th  >
         <input type="submit" name="updprof" id="updprof" value="Update Profile" />
         </th>
       </tr>
