@@ -10,7 +10,9 @@ while ($row = mysql_fetch_array($profilerec)) {
     $lname = $row["lastname"];
     $gend = $row["iam"];
 }
+//session_start();
 $_SESSION["iduser"] = $usid;
+
 $profilerec = mysql_query("SELECT * FROM profile WHERE userid ='$usid' ");
 
 while ($row = mysql_fetch_array($profilerec)) {

@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 $updrec="";
@@ -109,8 +110,7 @@ else if(document.edit.state.value=="")
 <div class=container>
 
 <!-- head --><!-- navigation menu -->
-<?php include("head.php"); ?>
-<?php include("menu.php"); ?>
+<?php include("head.php"); ?> 
 
 <div style="padding: 10px; text-align: left;">
 <!-- body  content -->

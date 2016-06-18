@@ -47,9 +47,7 @@ include("header.php");
 ?>
 <div class="container bodyStart">
     <div class="row"> 
-        <?php include("head.php"); ?>
-        <!-- navigation menu -->
-        <?php // include("menu.php");  ?>
+        <?php include("head.php"); ?> 
     </div>
 
     <div class="row">
@@ -60,9 +58,9 @@ include("header.php");
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> পরিচয় </a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">উপকারিতা </a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">প্রযুক্তি </a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">ভাষা নির্বাচন </a></li>
                 </ul>
 
                 <!-- Tab panes -->
@@ -81,8 +79,20 @@ include("header.php");
                         <p class="lead">The Campus networking web site is an online community designed to make your Campus life more active and stimulating. The Campus network can help you maintain existing relationships with college students and share pictures and messages, and establish new ones by reaching out to people you've never met before, and also using this site user can share Knowledge's, education related books, question/answer, etc. </td>
                         </p>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="messages">messages</div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+					আমরা যাকে ফেইসবুক নামে চিনি এটি একটি এই সোস্যাল মিডিয়া।এ রকম আরো অনেক রয়েছে যেমনঃ টুইটার,মাইস্পেস,গুগল প্লাস,ইন্সটাগ্রাম,ইউ টিউব SiDu ইত্যাদি।
+					</div>
                     <div role="tabpanel" class="tab-pane" id="settings">
+						<div class="row">
+						
+						<form class="form">
+							<label>ফন্ট নির্বাচন </label> 
+							<input type="radio" name="font" > Solimal Lipi 
+							<input type="radio" name="font" > Solimal Lipi 
+							<input type="submit" class="btn btn-success" value="Change">
+						</form>
+						</div> 
+						<hr>
                     </div>
                 </div>
 

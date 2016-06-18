@@ -15,6 +15,7 @@ if (!isset($_SESSION['logid'])) {
 if (isset($_SESSION['logid'])) {
     $_SESSION['logid'] = $_SESSION['logid'];
     $_SESSION['id'] = $_SESSION['id'];
+//	$_SESSION["stuid"]=$_SESSION['id'];
 }
 
 
