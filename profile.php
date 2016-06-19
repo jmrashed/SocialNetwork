@@ -79,7 +79,7 @@ while ($row = mysql_fetch_array($acrec4)) {
     $gen4 = $row["iam"];
 }
 ?>
-<div class="container bodyStart">
+<div class="container  ">
     <div class="row">
         <?php include("head.php"); ?>
         <?php // include("menu.php"); ?>
@@ -101,36 +101,52 @@ while ($row = mysql_fetch_array($acrec4)) {
 
             <br>
             College Name : <b><?php echo $cname; ?></b>
-            <hr>
-            <table class="table">
-                <tr>
-                    <td colspan="4" align="left">Request Friends</td>
-                </tr>
-                <tr>
-                    <td><a href="friendsprofile.php?fid=<?php echo $stid1; ?>"><img
-                                src="<?php echo $img[1]; ?>" width="100" height="150" border="0"
-                                alt=""> <?php echo $img[1]; ?> <br/>
-                            <?php echo $name1; ?><br/>
+            <div class="row">
+                <form class="form-group">
+                    <fieldset class="form-group">
+                        <label for="exampleTextarea"> আপনি এখন কি ভাবছেন ?</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"  >
+                           
 
-                        </a><br></td>
-                    <td><a href="friendsprofile.php?fid=<?php echo $stid2; ?>""><img
-                                src="<?php echo $img[1]; ?>" width="100" height="150" border="0"
-                                alt=""><br/>
-                                <?php echo $name2; ?>
-                        </a><br></td>
-                    <td><a href="friendsprofile.php?fid=<?php echo $stid3; ?>""><img
-                                src="<?php echo $img[2]; ?>" width="100" height="150" border="0"
-                                alt=""><br/>
-                                <?php echo $name3; ?>
-                        </a><br></td>
-                    <td><a href="friendsprofile.php?fid=<?php echo $stid4; ?>""><img
-                                src="<?php echo $img[3]; ?>" width="100" height="150" border="0"
-                                alt=""><br/>
-                                <?php echo $name4; ?>
-                        </a><br></td>
+                        </textarea>
+                    </fieldset>
+                    <div class="col-md-6">
+                        <select name="optin">
+                            <option value="Public">উন্মুক্ত </option>
+                            <option value="friend">বন্ধু </option>
+                            <option value="onlyme">শুধু আমি একা</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset class="form-group">
+                            <input type="submit" name="submit" class="btn btn-lg btn-success" value="Post">
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
 
-                </tr>
-            </table>
+            <div class="row">
+                <h4 class="page-header">Request Friends</h4>
+                <?php
+                for ($i = 1; $i <= 8; $i++) {
+                    ?>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <img src="images/1.png" class="img img-rounded img-responsive">
+
+                        <span class="friendRequest">Md. Abdul kayum <br>SiDu: 
+                            <a href="">  <?php echo rand(); ?>   </a> 
+                        </span>
+
+
+                    </div>
+
+                    <?php
+                }
+                ?>
+
+            </div>
+
+
             <table class="table table-responsive">
                 <tr>
                     <th colspan="2" scope="col"><br/> &nbsp; <?php echo $fname . " " . $lname; ?></th>
@@ -163,6 +179,7 @@ while ($row = mysql_fetch_array($acrec4)) {
             </table>
 
         </div>
+
         <div class="col-md-2 col-sm-2 pull-right">
             <h4 class="panel">My Friends</h4>
             <ul class="leftmenu pull-left">
@@ -180,9 +197,9 @@ while ($row = mysql_fetch_array($acrec4)) {
                         </li>
                     </div>
 
-    <?php
-}
-?> 
+                    <?php
+                }
+                ?> 
             </ul>
         </div>
     </div>

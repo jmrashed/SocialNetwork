@@ -5,77 +5,80 @@
     }
 </script>
 <div class="row">
-    <a href="profile.php"><img src="<?php echo $usimg; ?>" alt="" width="90" height="106" /></a><br>
-    <font color="#000099"><strong><?php echo $fname . " " . $lname; ?></strong><br />
-    <a href="changepic.php">Change Picture</a>
-    
-    <HR>
+    <div class="col-md-12">
+        <a href="profile.php"><img src="<?php echo $usimg; ?>" class="img img-resposive img-round" style="width:80%" /></a><br>
+        <?php echo $fname . " " . $lname; ?> <br>
+        <a href="changepic.php">Change Picture</a>
+    </div>
+
+
 </div>
+<HR>
 <div class="row">
     <ul class="leftmenu">
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-user leftmenu" data-toggle="tooltip"  >  Profile </span>
+                <span class="glyphicon glyphicon-user leftmenu" data-toggle="tooltip"  > আমি নিজেই  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-check leftmenu" data-toggle="tooltip"  > EditProfile </span>
+                <span class="glyphicon glyphicon-check leftmenu" data-toggle="tooltip"  > নিজেকে সংশোধন  </span>
+            </a>
+        </li> 
+        <li>
+            <a href="msg.php"> 
+                <span class="glyphicon glyphicon-envelope leftmenu" data-toggle="tooltip"  > বার্তা পাঠান  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-envelope leftmenu" data-toggle="tooltip"  > Message </span>
+                <span class="glyphicon glyphicon-bullhorn leftmenu" data-toggle="tooltip"  > কোন ঘটনা  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-bullhorn leftmenu" data-toggle="tooltip"  > Event </span>
+                <span class="glyphicon glyphicon-education leftmenu" data-toggle="tooltip"  > শিক্ষা  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-education leftmenu" data-toggle="tooltip"  > Education </span>
+                <span class="glyphicon glyphicon-book leftmenu" data-toggle="tooltip"  > কর্ম  ক্ষেত্র  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-book leftmenu" data-toggle="tooltip"  > Thesis </span>
+                <span class="glyphicon glyphicon-open-file leftmenu" data-toggle="tooltip"  > বই  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-open-file leftmenu" data-toggle="tooltip"  > Book </span>
+                <span class="glyphicon glyphicon-check leftmenu" data-toggle="tooltip"  >পেজ  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-check leftmenu" data-toggle="tooltip"  >New Page </span>
+                <span class="glyphicon glyphicon-picture leftmenu" data-toggle="tooltip"  > ছবি  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-picture leftmenu" data-toggle="tooltip"  > Photos </span>
+                <span class="glyphicon glyphicon-film leftmenu" data-toggle="tooltip"  > ভিডিও  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-film leftmenu" data-toggle="tooltip"  > Video </span>
+                <span class="glyphicon glyphicon-headphones leftmenu" data-toggle="tooltip"  > গান  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-headphones leftmenu" data-toggle="tooltip"  > Music </span>
+                <span class="glyphicon glyphicon-user leftmenu" data-toggle="tooltip"  > বন্ধুরা  </span>
             </a>
         </li> 
         <li>
             <a href="profile.php"> 
-                <span class="glyphicon glyphicon-user leftmenu" data-toggle="tooltip"  > Friends </span>
-            </a>
-        </li> 
-        <li>
-            <a href="profile.php"> 
-                <span class="glyphicon glyphicon-home leftmenu" data-toggle="tooltip"  > Home </span>
+                <span class="glyphicon glyphicon-home leftmenu" data-toggle="tooltip"  > আমার বাড়ি   </span>
             </a>
         </li> 
 
